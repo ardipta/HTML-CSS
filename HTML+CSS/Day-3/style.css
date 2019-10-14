@@ -1,0 +1,27 @@
+.para1{
+    font-size: 50px;
+    color: blueviolet;
+}
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color: chartreuse;
+    float: left;
+    margin: 20px 10px 30px;
+}
+.box2{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    float: left;
+    margin-bottom: 20px;
+    padding: 80px;
+    box-sizing: border-box;
+    border: 30px solid black;
+}
+.box3{
+    width: 1500px;
+    height: 200px;
+    background-color: aquamarine;
+    float: left;
+}
