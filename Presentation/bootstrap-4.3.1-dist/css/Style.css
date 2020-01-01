@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 3000px;
+}
+
+.myNav{
+    background-color: whitesmoke;
+    box-shadow: 0 0 5px silver;
+    height: 70px;
+}
+.nav-link{
+    color: black !important;
+    padding-right: 20px!important;
+    font-size: 1.1em;
+}
+.nav-link:hover{
+    color: #F68B1F!important;
+}
+.logo-img{
+    width: 120px;
+}
+.banner{
+    background-size: cover;
+    background-position: top;
+    background-blend-mode: darken;
+    height: 650px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.carousel-caption {
+    top: 325px;
+}
+.carousel-item{
+    background-color: rgba(0, 0, 0, 0.7);
+}
