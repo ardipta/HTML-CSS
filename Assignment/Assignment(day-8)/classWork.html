@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Starting Number</td>
+            <td><input type="text" id="StartingNumber"></td>
+        </tr>
+        <tr>
+            <td>Ending Number</td>
+            <td><input type="text" id="EndingNumber"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" id="btn" value="Show All"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" id="btn1" value="Even"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" id="btn2" value="Odd"></td>
+        </tr>
+        <tr>
+            <td>Output</td>
+            <td><textarea id="outputValue1" type="text" style="height: 150px; width: 150px"></textarea></td>
+        </tr>
+    </table>
+    <script>
+
+        var btn = document.getElementById('btn');
+        var btn1 = document.getElementById('btn1');
+        var btn2 = document.getElementById('btn2');
+        var outputValue ='';
+        btn.onclick = function ()
+        {
+
+            var startingNumberValue = document.getElementById('StartingNumber').value;
+            var endingNumberValue = document.getElementById('EndingNumber').value;
+            var outputValue ='';
+            for(x = startingNumberValue; x<= endingNumberValue; x++){
+                outputValue+=" "+x;
+            }
+            document.getElementById('outputValue1').value = outputValue;
+        }
+        btn1.onclick = function even() {
+            var startingNumberValue = document.getElementById('StartingNumber').value;
+            var endingNumberValue = document.getElementById('EndingNumber').value;
+            var evenValue ='';
+            for(y = startingNumberValue; y<= endingNumberValue; y++){
+                outputValue+=y;
+                if(y%2==0){
+                    evenValue+=" "+y;
+                }
+            }
+            document.getElementById('outputValue1').value = evenValue;
+        }
+        btn2.onclick = function odd() {
+            var startingNumberValue = document.getElementById('StartingNumber').value;
+            var endingNumberValue = document.getElementById('EndingNumber').value;
+            var oddValue ='';
+            for(z = startingNumberValue; z<=endingNumberValue; z++){
+                outputValue+=z;
+                if(z%2!==0){
+                    oddValue+=" "+z;
+                }
+            }
+            document.getElementById('outputValue1').value = oddValue;
+        }
+    </script>
+</body>
+</html>
